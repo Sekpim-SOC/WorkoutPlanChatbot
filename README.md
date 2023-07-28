@@ -3,7 +3,7 @@ This repository contains a Telegram chatbot that helps users create personalized
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar then install telegram bot and owlready2.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the telegram bot and owlready2.
 
 ```bash
 pip install python-telegram-bot==13.13
