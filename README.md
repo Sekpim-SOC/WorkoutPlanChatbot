@@ -12,12 +12,18 @@ pip install python-telegram-bot==13.13
 pip install owlready2
 ```
 
-## How to use
+## How to start the chatbot
 
 1. Change the directory of the .owl file with your own
 2. Create a telegram chatbot with BotFather
 3. use TOKEN from BotFather to the code
 4. Run the .py file
+
+## Instruction
+1. Start the bot by invoking the /start command on Telegram.
+2. Provide your name, gender, height, waist circumference, activity level, difficulty preference, and muscle group preference as prompted.
+3. The chatbot will perform reasoning using OWL and present a personalized workout plan based on your inputs.
+4. The workout plan will include exercises for Warm-up, Core, Upper Body/Lower Body/Full Body, and Cool-down sessions.
 
 ## Paper
 
