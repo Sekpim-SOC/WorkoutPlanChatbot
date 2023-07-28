@@ -25,6 +25,9 @@ pip install owlready2
 3. The chatbot will perform reasoning using OWL and present a personalized workout plan based on your inputs.
 4. The workout plan will include exercises for Warm-up, Core, Upper Body/Lower Body/Full Body, and Cool-down sessions.
 
+## Note
+The ontology "inikaliyakwkwkw.owl" contains the underlying rules and data definitions for the chatbot's reasoning. The code loads the ontology, applies reasoning rules, and generates tailored workout plans for users based on the information provided.
+
 ## Paper
 
 [SINKRON](https://jurnal.polgan.ac.id/index.php/sinkron/article/view/12689)
