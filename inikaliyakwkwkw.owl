@@ -1,0 +1,3040 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/widif/ontologies/2023/4/TaOntologyFix"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/widif/ontologies/2023/4/TaOntologyFix">
+    <Prefix name="" IRI="http://www.semanticweb.org/widif/ontologies/2023/4/TaOntologyFix/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#ActivityLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifficultyLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuscleGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obesity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Session"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#NotUse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Use"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSession"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasActivityLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDifficultyPreference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMuscleGroupPreference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRFM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWaist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Active"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveAdvancedFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveAdvancedLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveAdvancedUFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveAdvancedULowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveAdvancedUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveBeginnerFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveBeginnerLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveBeginnerUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveIntermediateFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveIntermediateLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActiveIntermediateUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Advanced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlternatingChestExpansions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnkleCircles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArcherPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArmCircles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackwardLegRaises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beginner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BentOverRows"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BirdDogs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxJumps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BriskWalking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BulgarianSplitSquats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burpees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalfRaises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChestExpansions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clamshells"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClappingPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingDownSession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoreSession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeclinePushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiamondPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DonkeyKicks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoorwayRows"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FireHydrants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlutterKicks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullBodySession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullBurpees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GluteBridges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GluteKickbacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandstandPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighKnees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipRotations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HollowHolds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveAdvancedFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveAdvancedLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveAdvancedUFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveAdvancedULowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveAdvancedUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveBeginnerFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveBeginnerLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveIntermediateFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveIntermediateLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InactiveIntermediateUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InclinePushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intermediate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JumpSquats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JumpingLunges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LateralPlankWalks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LegRaises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowerBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowerBodySession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lunges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MountainClimbers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneArmPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PikePushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PistolSquats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plank"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlankJacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanktoPike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanktoSidePlank"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlieSquats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlyometricLunges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlyometricPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RaisedArmsCircles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RenegadeRows"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReverseLunges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RussianTwists"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sedentary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderRotations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SideLunges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SidePlankDips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SidePlanks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SingleLegBoxStepups"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SingleLegDeadlifts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SitUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SkaterJumps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlowForwardAndBackNeckTilts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlowMarchJacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlowNeckRotations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlowSideJacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlowSideToSideNeckTilts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpidermanPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SquatJumps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingAbdominalCrunches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingHeeltoToeRaises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingMarches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingShoulderPress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StepUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SupermanPulses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supermans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TricepDips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TricepsPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TuckJumps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UpperBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UpperBodySession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vups"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WallPushUps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WallSits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WarmUpSession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WristCircles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coolingdown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#core"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fullbody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inactive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lowerbody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#upperbody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveAdvancedFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveAdvancedLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveAdvancedUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveBeginnerFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveBeginnerLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveBeginnerUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveIntermediateFullBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveIntermediateFullBodyyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveIntermediateLowerBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#veryActiveIntermediateUpperBodyWorkoutPlan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#warmup"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Obesity"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActivityLevel"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercise"/>
+        <Class IRI="#WorkoutPlan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MuscleGroup"/>
+        <Class IRI="#WorkoutPlan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preference"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Session"/>
+        <Class IRI="#WorkoutPlan"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ActivityLevel"/>
+        <NamedIndividual IRI="#Active"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#Advanced"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#AlternatingChestExpansions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#AlternatingChestExpansions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#AnkleCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#AnkleCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ArcherPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ArcherPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BackwardLegRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BackwardLegRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#Beginner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BentOverRows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BentOverRows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BoxJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BoxJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BriskWalking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BriskWalking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#BulgarianSplitSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#BulgarianSplitSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Burpees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#Burpees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#CalfRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#CalfRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ChestExpansions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ChestExpansions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Clamshells"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#Clamshells"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ClappingPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ClappingPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#CoolingDownSession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#CoolingDownSession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#CoreSession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#CoreSession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#DeclinePushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#DeclinePushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#DiamondPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#DiamondPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Dips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#Dips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#DonkeyKicks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#DonkeyKicks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#DoorwayRows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#DoorwayRows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#FireHydrants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#FireHydrants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Preference"/>
+        <NamedIndividual IRI="#FullBody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#FullBurpees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#FullBurpees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#GluteKickbacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#GluteKickbacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#HandstandPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#HandstandPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#HighKnees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#HighKnees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#HipRotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#HipRotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DifficultyLevel"/>
+        <NamedIndividual IRI="#Intermediate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#JumpSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#JumpSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#JumpingLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#JumpingLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#LateralPlankWalks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#LateralPlankWalks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Preference"/>
+        <NamedIndividual IRI="#LowerBody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Lunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#OneArmPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#OneArmPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PikePushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PikePushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PistolSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PistolSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Plank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#Plank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PlankJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PlankJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PlanktoPike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PlanktoPike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PlanktoSidePlank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PlanktoSidePlank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PlieSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PlieSquats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PlyometricLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PlyometricLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PlyometricPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PlyometricPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#PushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#PushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#RaisedArmsCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#RaisedArmsCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#RenegadeRows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#RenegadeRows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ReverseLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ReverseLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#RussianTwists"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#RussianTwists"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActivityLevel"/>
+        <NamedIndividual IRI="#Sedentary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ShoulderRotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ShoulderRotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SideLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SideLunges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SidePlanks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SidePlanks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SingleLegBoxStepups"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SingleLegBoxStepups"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SingleLegDeadlifts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SingleLegDeadlifts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SkaterJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SkaterJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SlowForwardAndBackNeckTilts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SlowForwardAndBackNeckTilts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SlowMarchJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SlowMarchJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SlowNeckRotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SlowNeckRotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SlowSideJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SlowSideJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SlowSideToSideNeckTilts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SlowSideToSideNeckTilts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SpidermanPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SpidermanPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingAbdominalCrunches"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingAbdominalCrunches"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingHeeltoToeRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingHeeltoToeRaises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingShoulderPress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingShoulderPress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#StepUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#StepUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#SupermanPulses"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#SupermanPulses"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Supermans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#Supermans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#TricepDips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#TricepDips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#TricepsPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#TricepsPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#TuckJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#TuckJumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Preference"/>
+        <NamedIndividual IRI="#UpperBody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#Vups"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#Vups"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#WallSits"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exercise"/>
+        <NamedIndividual IRI="#WristCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#WristCircles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MuscleGroup"/>
+        <NamedIndividual IRI="#coolingdown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#coolingdown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MuscleGroup"/>
+        <NamedIndividual IRI="#core"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MuscleGroup"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActivityLevel"/>
+        <NamedIndividual IRI="#inactive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MuscleGroup"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MuscleGroup"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActivityLevel"/>
+        <NamedIndividual IRI="#veryActive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MuscleGroup"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WorkoutPlan"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#AlternatingChestExpansions"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#AnkleCircles"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ArcherPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BackwardLegRaises"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BentOverRows"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BirdDogs"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BoxJumps"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BriskWalking"/>
+        <NamedIndividual IRI="#coolingdown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#BulgarianSplitSquats"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Burpees"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#CalfRaises"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Clamshells"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ClappingPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoolingDownSession"/>
+        <NamedIndividual IRI="#BriskWalking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#BirdDogs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#FlutterKicks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#HollowHolds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#LegRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#Plank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#SidePlankDips"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#SitUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <NamedIndividual IRI="#RussianTwists"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#DeclinePushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#DiamondPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Dips"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#DonkeyKicks"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#DoorwayRows"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#FireHydrants"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#FlutterKicks"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#Burpees"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#HighKnees"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#JumpSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#Lunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#Plank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#PlankJacks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#PlanktoPike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#PushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#ReverseLunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#RussianTwists"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#SideLunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#SidePlanks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#StandingAbdominalCrunches"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#Supermans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#TricepDips"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#TuckJumps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#Vups"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#FullBodySession"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#FullBurpees"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#GluteKickbacks"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#HandstandPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#HighKnees"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#HipRotations"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#HollowHolds"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#DoorwayRows"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#TricepDips"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#WristCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#coolingdown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSession"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#CoolingDownSession"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSession"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#CoreSession"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSession"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSession"/>
+        <NamedIndividual IRI="#InactiveBeginnerUpperBodyWorkoutPlan"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#JumpSquats"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#JumpingLunges"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#LateralPlankWalks"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#LegRaises"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#AnkleCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#BoxJumps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#BulgarianSplitSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#CalfRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#Clamshells"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#DonkeyKicks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#FireHydrants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#GluteKickbacks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#JumpSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#JumpingLunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#Lunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#PistolSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#PlieSquats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#PlyometricLunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#ReverseLunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#SideLunges"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#SingleLegBoxStepups"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#SingleLegDeadlifts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#SkaterJumps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#StandingHeeltoToeRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#StepUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#LowerBodySession"/>
+        <NamedIndividual IRI="#WallSits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#OneArmPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PikePushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PistolSquats"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Plank"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Plank"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Plank"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PlankJacks"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PlanktoPike"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PlanktoSidePlank"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PlieSquats"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PlyometricLunges"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PlyometricPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PushUps"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#PushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#RenegadeRows"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ReverseLunges"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#RussianTwists"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ShoulderRotations"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SideLunges"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SideLunges"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SidePlankDips"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SidePlanks"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SingleLegBoxStepups"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SingleLegDeadlifts"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SitUps"/>
+        <NamedIndividual IRI="#core"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SkaterJumps"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SlowForwardAndBackNeckTilts"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SlowMarchJacks"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SlowNeckRotations"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SlowSideJacks"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SlowSideToSideNeckTilts"/>
+        <NamedIndividual IRI="#warmup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SpidermanPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingAbdominalCrunches"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingHeeltoToeRaises"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingShoulderPress"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#StepUps"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#SupermanPulses"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Supermans"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#TricepDips"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#TricepDips"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#TricepsPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#TuckJumps"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#ArcherPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#BentOverRows"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#ClappingPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#DeclinePushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#DiamondPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#Dips"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#DoorwayRows"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#HandstandPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#LateralPlankWalks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#OneArmPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#PikePushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#Plank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#PlanktoSidePlank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#PlyometricPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#PushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#RenegadeRows"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#SpidermanPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#StandingShoulderPress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#SupermanPulses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#TricepDips"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#TricepsPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#UpperBodySession"/>
+        <NamedIndividual IRI="#WristCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#Vups"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+        <NamedIndividual IRI="#fullbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#WallSits"/>
+        <NamedIndividual IRI="#lowerbody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#AlternatingChestExpansions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#BackwardLegRaises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#ChestExpansions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#HipRotations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#RaisedArmsCircles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#ShoulderRotations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#SlowForwardAndBackNeckTilts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#SlowMarchJacks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#SlowNeckRotations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#SlowSideJacks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExercise"/>
+        <NamedIndividual IRI="#WarmUpSession"/>
+        <NamedIndividual IRI="#SlowSideToSideNeckTilts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <NamedIndividual IRI="#WristCircles"/>
+        <NamedIndividual IRI="#upperbody"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#AnkleCircles"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#ArcherPushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#ArmCircles"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#BentOverRows"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#BicycleCrunches"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#BodyweightSquats"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#BoxJumps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#BriskWalking"/>
+        <Literal>Brisk Walking</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDuration"/>
+        <NamedIndividual IRI="#BriskWalking"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#BulgarianSplitSquats"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#Burpees"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#CalfRaises"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#Clamshells"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#ClappingPushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#CoolingDownSession"/>
+        <Literal>CoolingDown Session</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#CoreSession"/>
+        <Literal>CoreSession</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#DeclinePushUps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#DiamondPushUps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#Dips"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#DonkeyKicks"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#DoorwayRows"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#FireHydrants"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#FullBurpees"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#GluteBridges"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#GluteKickbacks"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#HandstandPushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#HighKnees"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#InclinePushUps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#JumpSquats"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+        <Literal>Beginner Level</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#JumpingLunges"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#LateralPlankWalks"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#MountainClimbers"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#OneArmPushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PikePushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PistolSquats"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#Plank"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PlankJacks"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PlanktoPike"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PlanktoSidePlank"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PlieSquats"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PlyometricLunges"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PlyometricPushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#PushUps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#RenegadeRows"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#ReverseLunges"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SeatedArmRaises"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SeatedLegRaises"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#ShoulderTaps"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SideLunges"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SidePlanks"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SingleLegBoxStepups"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SingleLegDeadlifts"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SkaterJumps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SpidermanPushUps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SquatJumps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingAbdominalCrunches"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingBicepCurls"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingChestFlys"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingHeeltoToeRaises"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingMarches"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingOverheadPress"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingShoulderPress"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StandingSideLegLifts"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#StepUps"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#SupermanPulses"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#Supermans"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#TricepDips"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#TricepsPushUps"/>
+        <Literal>Intermediate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#TuckJumps"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#Vups"/>
+        <Literal>Advanced</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#WallPushUps"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#WallSits"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <NamedIndividual IRI="#WristCircles"/>
+        <Literal>Beginner</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWorkoutPlan"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExercise"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMuscleGroup"/>
+        <Class IRI="#MuscleGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSession"/>
+        <Class IRI="#MuscleGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWorkoutPlan"/>
+        <Class IRI="#WorkoutPlan"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasActivityLevel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDifficultyPreference"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasGender"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasHeight"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMuscleGroupPreference"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRFM"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasReps"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWaist"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasActivityLevel"/>
+        <Class IRI="#ActivityLevel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDifficultyPreference"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDuration"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDuration"/>
+        <Class IRI="#WorkoutPlan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGender"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMuscleGroupPreference"/>
+        <Class IRI="#MuscleGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasReps"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasReps"/>
+        <Class IRI="#WorkoutPlan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSet"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSet"/>
+        <Class IRI="#WorkoutPlan"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasActivityLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDifficultyLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDifficultyPreference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDuration"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMuscleGroupPreference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRFM"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasReps"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSet"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWaist"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
