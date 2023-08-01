@@ -7,7 +7,7 @@ from owlready2.reasoning import sync_reasoner_pellet
 import random
 
 # Defined ontology and classes here
-onto = get_ontology("C:/Users/widif/Downloads/TA/inikaliyakwkwkw.owl").load()
+onto = get_ontology("inikaliyakwkwkw.owl").load()
 
 # Define the rules
 with onto:
