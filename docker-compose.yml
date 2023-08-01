@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    container_name: ${APP_NAME:-chatbot-sumedang-larang}
+    container_name: ${APP_NAME:-chatbot-workout-ontology}
     build: .
     environment:
       API_TOKEN: ${TELEGRAM_API}

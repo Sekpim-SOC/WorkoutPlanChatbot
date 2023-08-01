@@ -1,5 +1,9 @@
 # Let's Get Fit WorkoutPlan Chatbot
 This repository contains a Telegram chatbot that helps users create personalized workout plans based on their gender, height, waist circumference, activity level, difficulty preference, and muscle group preference. The chatbot uses OWL (Web Ontology Language) to model and reason about user data, allowing it to provide tailored workout recommendations.
+## Prerequisites 
+openjdk version "1.8.0_342"
+OpenJDK Runtime Environment (build 1.8.0_342-b07)
+OpenJDK 64-Bit Server VM (build 25.342-b07, mixed mode)     
 
 ## Installation
 
