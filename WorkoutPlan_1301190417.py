@@ -5,6 +5,11 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackQueryH
 from owlready2 import *
 from owlready2.reasoning import sync_reasoner_pellet
 import random
+import os
+
+# Api Telegram
+api_token = os.getenv("API_TOKEN", "")
+# api_token='6457253486:AAF4xiGhBBvWWi_yj8TKO-5fTxh9T5gR6W0'
 
 # Defined ontology and classes here
 onto = get_ontology("inikaliyakwkwkw.owl").load()
@@ -372,7 +377,7 @@ def error(update, context):
 
 def main():
     # Set up the Telegram bot
-    TOKEN = "6499997602:AAGoWGWR62604P0h-ILN5H6-G2VCqIyo40I"
+    TOKEN = api_token
     updater = Updater(token=TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
