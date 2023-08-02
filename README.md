@@ -1,4 +1,4 @@
-# Let's Get Fit WorkoutPlan Chatbot
+# Let's Get Fit WorkoutPlan Chatbot ( Workout Plan Ontology-Based Recommendation System Using SWRL)
 This repository contains a Telegram chatbot that helps users create personalized workout plans based on their gender, height, waist circumference, activity level, difficulty preference, and muscle group preference. The chatbot uses OWL (Web Ontology Language) to model and reason about user data, allowing it to provide tailored workout recommendations.
 
 ## Installation
