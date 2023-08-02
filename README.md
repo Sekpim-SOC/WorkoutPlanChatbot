@@ -17,7 +17,7 @@ pip install owlready2
 1. Change the directory of the .owl file with your own
 2. Create a telegram chatbot with BotFather
 3. use TOKEN from BotFather to the code
-4. Run the .py file
+4. Run the .py file or .ipynb file
 
 ## Instruction
 1. Start the bot by invoking the /start command on Telegram.
