@@ -28,6 +28,6 @@ pip install owlready2
 ## Note
 The ontology "inikaliyakwkwkw.owl" contains the underlying rules and data definitions for the chatbot's reasoning. The code loads the ontology, applies reasoning rules, and generates tailored workout plans for users based on the information provided.
 
-## Paper
+## Research Paper
 
 [SINKRON](https://jurnal.polgan.ac.id/index.php/sinkron/article/view/12689)
