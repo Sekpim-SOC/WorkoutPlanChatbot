@@ -4,5 +4,6 @@ services:
   web:
     container_name: ${APP_NAME:-chatbot-workout-ontology}
     build: .
+    restart: always
     environment:
       API_TOKEN: ${TELEGRAM_API}
